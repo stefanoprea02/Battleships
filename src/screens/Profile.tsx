@@ -43,6 +43,7 @@ const Profile: FC<Props> = () => {
         onPress={() => {
           auth.logout();
         }}
+        style={styles.button}
       />
     </View>
   );
@@ -67,6 +68,10 @@ const styles = StyleSheet.create({
   userDetail: {
     color: "#284b63",
     fontSize: 18,
+  },
+  button: {
+    position: "absolute",
+    bottom: "5%",
   },
 });
 
